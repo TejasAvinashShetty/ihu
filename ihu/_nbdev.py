@@ -2,9 +2,9 @@
 
 __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
-index = {}
+index = {"complex_random_sample": "01_reshape.ipynb"}
 
-modules = []
+modules = ["reshape.py"]
 
 doc_url = "https://TejasAvinashShetty.github.io/ihu/"
 
