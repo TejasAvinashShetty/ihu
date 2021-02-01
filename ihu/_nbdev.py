@@ -6,7 +6,9 @@ index = {"ihu": "00_core.ipynb",
          "y_der": "00_core.ipynb",
          "complex_random_sample": "01_reshape.ipynb",
          "rand_herm_ndarray": "02_herm.ipynb",
-         "test_herm_ndarray": "02_herm.ipynb"}
+         "test_herm_ndarray": "02_herm.ipynb",
+         "rand_unitary_ndarray": "03_unitary.ipynb",
+         "test_unitary_ndarray": "03_unitary.ipynb"}
 
 modules = ["core.py",
            "reshape.py",
