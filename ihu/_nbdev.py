@@ -10,10 +10,11 @@ index = {"ihu": "00_core.ipynb",
          "test_herm_ndarray": "02_herm.ipynb",
          "rand_unitary_ndarray": "03_unitary.ipynb",
          "test_unitary_ndarray": "03_unitary.ipynb",
-         "identity_ham": "04_tests.ipynb",
+         "zero_ham": "04_tests.ipynb",
          "u0": "04_tests.ipynb",
          "evolution_time": "04_tests.ipynb",
-         "no_time_step_for_eval": "04_tests.ipynb"}
+         "no_time_step_for_eval": "04_tests.ipynb",
+         "identity_ham": "04_tests.ipynb"}
 
 modules = ["core.py",
            "reshape.py",
