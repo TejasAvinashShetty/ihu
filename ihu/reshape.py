@@ -3,6 +3,11 @@
 __all__ = ['complex_random_sample']
 
 # Cell
+from numpy.random import random_sample
+from numpy import array
+from numpy.testing import assert_allclose
+
+# Cell
 def complex_random_sample(shape_tuple):
     ''' A complex analogue of the random_sample numpy function.
     Inputs
