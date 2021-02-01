@@ -3,6 +3,11 @@
 __all__ = ['ihu', 'y_der']
 
 # Cell
+from scipy.integrate import solve_ivp
+from numpy.random import random_sample
+from numpy import array
+
+# Cell
 def ihu(ham_func, u0, T, no_time_step_for_eval, **kwargs):
     r"""evolves the unitary
 
