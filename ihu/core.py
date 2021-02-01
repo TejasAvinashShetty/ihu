@@ -82,7 +82,7 @@ def ihu(ham_func, u0, evolution_time, no_time_step_for_eval, **kwargs):
 
     print(result.message)
 
-    u_series = result.y.reshape(u_shape, u_shape, result.y.shape[-1])
+    u_series = result.y.reshape(u_shape[0], u_shape[0], result.y.shape[-1])
 
     return u_series, result
 
@@ -107,7 +107,7 @@ def y_der(t, y, u_shape, ham_func):
 
     """
     # u_shape = int(sqrt(y.shape[0]))
-    u_curr = y.reshape(u_shape, u_shape)
+    u_curr = y.reshape(u_shape[0], u_shape[0])
     hamiltonian_curr = ham_func(t)
     dudt = -1j*hamiltonian_curr@u_curr
     dydt = dudt.ravel()
