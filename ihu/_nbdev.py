@@ -14,7 +14,8 @@ index = {"ihu": "00_core.ipynb",
 modules = ["core.py",
            "reshape.py",
            "herm.py",
-           "unitary.py"]
+           "unitary.py",
+           "04_tests.py"]
 
 doc_url = "https://TejasAvinashShetty.github.io/ihu/"
 

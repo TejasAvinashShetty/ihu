@@ -141,13 +141,13 @@ def check_for_stupidity(ham_func, u0, ):
 
     try:
         assert test_unitary_ndarray(u0) is True
-    except AssertionError as e4::
+    except AssertionError as e4:
         print('Initial unitary is not unitary')
         raise AssertionError
 
     try:
         assert test_herm_ndarray(ham_func(0.42)) is True
-    except AssertionError as e4::
+    except AssertionError as e5:
         print('Hamiltonian is not Hermitian')
         raise AssertionError
 
