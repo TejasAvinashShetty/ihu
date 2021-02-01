@@ -6,6 +6,8 @@ __all__ = ['ihu', 'y_der']
 from scipy.integrate import solve_ivp
 from numpy.random import random_sample
 from numpy import array
+from .herm import rand_herm_ndarray, test_herm_ndarray
+from .unitary import rand_unitary_ndarray, test_unitary_ndarray
 
 # Cell
 def ihu(ham_func, u0, T, no_time_step_for_eval, **kwargs):
@@ -83,9 +85,7 @@ def ihu(ham_func, u0, T, no_time_step_for_eval, **kwargs):
         Values of the solution at t.
 
     """
-    w = kwargs.pop("w", 6.28)
-    if kwargs:
-        print("Got {0} unused kwargs".format(len(kwargs)))
+
     return (x**2 + len(y)) * (w + z)
 
 
