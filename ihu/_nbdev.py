@@ -7,7 +7,9 @@ index = {"ihu": "00_core.ipynb",
          "complex_random_sample": "01_reshape.ipynb"}
 
 modules = ["core.py",
-           "reshape.py"]
+           "reshape.py",
+           "herm.py",
+           "unitar.py"]
 
 doc_url = "https://TejasAvinashShetty.github.io/ihu/"
 
