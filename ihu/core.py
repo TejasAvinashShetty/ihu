@@ -11,7 +11,7 @@ from .herm import rand_herm_ndarray, test_herm_ndarray
 from .unitary import rand_unitary_ndarray, test_unitary_ndarray
 
 # Cell
-def ihu(ham_func, u0, T, no_time_step_for_eval, **kwargs):
+def ihu(ham_func, u0, evolution_time, no_time_step_for_eval, **kwargs):
     r"""evolves the unitary
 
     Parameters
@@ -22,7 +22,7 @@ def ihu(ham_func, u0, T, no_time_step_for_eval, **kwargs):
         form ham_func(t)
     u0 : ndarray
         Unitary at time 0
-    T : float
+    evolution_time : float
         Evolution time
     no_time_step_for_eval : int
         no of time steps for evaluation in the
@@ -67,7 +67,7 @@ def ihu(ham_func, u0, T, no_time_step_for_eval, **kwargs):
         Values of the solution at t.
 
     """
-    u_shape = u0.shape()
+    u_shape = u0.shape
 
     check_for_stupidity(ham_func, u0, )
     T = evolution_time
@@ -106,7 +106,7 @@ def y_der(t, y, u_shape, ham_func):
         flattened derivative of the unitary
 
     """
-    # u_shape = int(sqrt(y.shape(0)))
+    # u_shape = int(sqrt(y.shape[0]))
     u_curr = y.reshape(u_shape, u_shape)
     hamiltonian_curr = ham_func(t)
     dudt = -1j*hamiltonian_curr@u_curr
@@ -117,8 +117,8 @@ def y_der(t, y, u_shape, ham_func):
 # Cell
 def check_for_stupidity(ham_func, u0, ):
     r"""Perform checks for invalid inputs and the lot"""
-    u0_shape = u0.shape()
-    ham_shape = ham_func(0.2).shape()
+    u0_shape = u0.shape
+    ham_shape = ham_func(0.2).shape
 
 
     try:
