@@ -9,7 +9,8 @@ index = {"ihu": "00_core.ipynb",
          "rand_herm_ndarray": "02_herm.ipynb",
          "test_herm_ndarray": "02_herm.ipynb",
          "rand_unitary_ndarray": "03_unitary.ipynb",
-         "test_unitary_ndarray": "03_unitary.ipynb"}
+         "test_unitary_ndarray": "03_unitary.ipynb",
+         "identity_ham": "04_tests.ipynb"}
 
 modules = ["core.py",
            "reshape.py",
