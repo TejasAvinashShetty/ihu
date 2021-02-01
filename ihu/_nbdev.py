@@ -4,12 +4,14 @@ __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
 index = {"ihu": "00_core.ipynb",
          "y_der": "00_core.ipynb",
-         "complex_random_sample": "01_reshape.ipynb"}
+         "complex_random_sample": "01_reshape.ipynb",
+         "rand_herm_ndarray": "02_herm.ipynb",
+         "test_herm_ndarray": "02_herm.ipynb"}
 
 modules = ["core.py",
            "reshape.py",
            "herm.py",
-           "unitar.py"]
+           "unitary.py"]
 
 doc_url = "https://TejasAvinashShetty.github.io/ihu/"
 
