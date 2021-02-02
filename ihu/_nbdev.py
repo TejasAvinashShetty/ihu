@@ -14,7 +14,10 @@ index = {"ihu": "00_core.ipynb",
          "u0": "04_tests.ipynb",
          "evolution_time": "04_tests.ipynb",
          "no_time_step_for_eval": "04_tests.ipynb",
-         "identity_ham": "04_tests.ipynb"}
+         "identity_ham": "04_tests.ipynb",
+         "silly_ham": "04_tests.ipynb",
+         "H0": "04_tests.ipynb",
+         "H1": "04_tests.ipynb"}
 
 modules = ["core.py",
            "reshape.py",
