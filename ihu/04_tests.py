@@ -2,13 +2,15 @@
 
 __all__ = ['zero_ham', 'u0', 'evolution_time', 'no_time_step_for_eval', 'zero_ham', 'u0', 'evolution_time',
            'no_time_step_for_eval', 'identity_ham', 'u0', 'evolution_time', 'no_time_step_for_eval', 'silly_ham', 'H0',
-           'H1', 'u0', 'evolution_time', 'no_time_step_for_eval']
+           'H1', 'u0', 'evolution_time', 'no_time_step_for_eval', 'H', 'psi0', 'times', 'mere_result', 'q_ham', 'u0',
+           'evolution_time', 'no_time_step_for_eval']
 
 # Cell
 from numpy.random import random_sample
-from numpy import array, identity, zeros, linspace
+from numpy import array, identity, zeros, linspace, pi, empty
 from numpy.testing import assert_allclose
 from qutip import mesolve
+from qutip import basis
 from qutip import sigmax, sigmay, sigmaz, qeye
 from qutip.ui.progressbar import BaseProgressBar, TextProgressBar
 from math import sin, cos
@@ -88,4 +90,30 @@ no_time_step_for_eval = 100
 
 # Cell
 u_series, result = ihu(silly_ham, u0, evolution_time,
+                       no_time_step_for_eval,)
+
+# Cell
+H = 2*pi*0.1*sigmax()
+
+# Cell
+psi0 = basis(2, 0)
+
+# Cell
+times = linspace(0.0, 10, 20)
+
+# Cell
+mere_result = mesolve(H, psi0, times)
+
+# Cell
+def q_ham(t):
+    qutham = H.full()
+    return qutham
+
+# Cell
+u0 = identity(2, dtype=complex)
+evolution_time = 10
+no_time_step_for_eval = 20
+
+# Cell
+u_series, result = ihu(q_ham, u0, evolution_time,
                        no_time_step_for_eval,)
