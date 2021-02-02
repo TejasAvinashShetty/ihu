@@ -2,7 +2,9 @@
   "ihu": {
     "Overview": "/",
     "ihu": "core.html",
-    "Title": "unitary.html",
-    "Independent tests": "tests.html"
+    "Reshape": "reshape.html",
+    "herm": "herm.html",
+    "unitary": "unitary.html",
+    "Tests for core": "tests.html"
   }
 }

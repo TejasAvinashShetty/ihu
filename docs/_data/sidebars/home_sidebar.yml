@@ -13,10 +13,16 @@ entries:
       title: ihu
       url: core.html
     - output: web,pdf
-      title: Title
+      title: Reshape
+      url: reshape.html
+    - output: web,pdf
+      title: herm
+      url: herm.html
+    - output: web,pdf
+      title: unitary
       url: unitary.html
     - output: web,pdf
-      title: Independent tests
+      title: Tests for core
       url: tests.html
     output: web
     title: ihu
