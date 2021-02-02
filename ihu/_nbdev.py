@@ -27,7 +27,7 @@ modules = ["core.py",
            "reshape.py",
            "herm.py",
            "unitary.py",
-           "04_tests.py"]
+           "tests.py"]
 
 doc_url = "https://TejasAvinashShetty.github.io/ihu/"
 
